@@ -1,0 +1,64 @@
+.plan-trip-container{
+    padding: 0 10px;
+    margin: 4rem 0;
+}
+
+/* 
+.plan_section__title{
+    margin-bottom: 4rem;
+    line-height: 1.1;
+} */
+
+.plan__trip__grid{
+    display: grid;
+    gap: 2rem;
+}
+.plan__trip__grid .list-item svg{
+    width: 5.5rem;
+    height: 5.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+} 
+
+span[data-accent='1'] svg{
+    background-color: #E6E7EC;
+    color: #466287;
+}
+
+span[data-accent='2'] svg{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+span[data-accent='3'] svg{
+    background-color: #E6E7EC;
+    color: #466287;
+}
+
+
+
+@media screen and (min-width: 600px){
+    .plan-trip-container{
+        padding: 0 4rem;
+    }
+    
+    .plan_section__title{
+        margin-bottom: 3rem;
+    }
+    .plan__trip__grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width: 800px) {
+    .plan-trip-container{
+        padding: 0 10px;
+    }
+}
+
+/* @media screen and (min-width: 1200px) {
+    .plan_section__title{
+        padding: 0 15rem;
+    }
+} */

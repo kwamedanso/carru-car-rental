@@ -1,0 +1,136 @@
+header{
+    background-image: radial-gradient(#bdbdbd 1px, transparent 1px), radial-gradient(#bdbdbd 1px, transparent 1px);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+    background-color: var(--black);
+    color: var(--white);
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header .inner{
+    backdrop-filter: blur(2px);
+}
+
+header .logo a{
+    font-size: var(--fs-700);
+    font-weight: var(--fw-bold);
+    color: var(--white);
+}
+
+.humburger{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: .3rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 8px 10px;
+    /* border-radius: var(--border-radius); */
+    transition: 100ms;
+    font-size: 14px;
+    opacity: .7;
+}
+
+
+.nav-bar ul li a:hover{
+    opacity: 1;
+    /* font-size: 16px; */
+}
+
+.nav-bar ul li a.active{
+    opacity: 1;
+    font-weight: bolder;
+}
+
+.register{
+    font-size: var(--fs-200);
+    border: none;
+    background: none;
+    color: var(--white);
+    text-decoration: underline;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    header{
+        padding: 0 14px;
+        height: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+    }
+    .humburger{
+        display: block;
+    }
+
+    .humburger .line{
+        width: 30px;
+        height: 3px;
+        background-color: var(--white);
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        background-image: radial-gradient(#bdbdbd 1px, transparent 1px), radial-gradient(#bdbdbd 1px, transparent 1px);
+        background-size: 100px 100px;
+        background-position: 0 0, 50px 50px;
+        background-color: var(--black);
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 54px;
+        /* background-color: var(--black); */
+        transition: 400ms;
+        height: 0px;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: max-content;
+        margin: 3rem auto 0 auto;
+        text-align: center;
+        transition: 400ms;
+    }
+
+    .nav-bar ul li{
+        margin: 2rem;
+    }
+
+    .nav-bar ul li a{
+        font-size: var(--fs-400);
+    }
+
+    .nav-bar.active{
+        opacity: 1;
+        height: 450px;
+    }
+
+    .register{
+        font-size: var(--fs-400);
+    }
+
+}

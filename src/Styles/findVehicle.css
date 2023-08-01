@@ -1,0 +1,102 @@
+.find__vehicle__content{
+    background: #FCFCFC;
+    width: 100%;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.select__item{
+    background: var(--white);
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.search__location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:7px ;
+    border: 1px solid rgb(241, 232, 232);
+    border-radius: var(--border-radius);
+}
+
+.search__location input, .select__date input{
+    border: none;
+    width: 100%;
+    padding: 10px 7px;
+    font-size: var(--fs-300);
+    border-radius: var(--size-100);
+}
+
+.select__date input{
+    border-radius: var(--border-radius);
+    border: 1px solid rgb(241, 232, 232) ;
+}
+
+.search__date input {
+    padding: 7px 3px;
+    width: 100%;
+}
+
+.select__item{
+    background-color: var(--white);
+}
+
+.search__location, .search__date{
+    background: white;
+}
+
+
+.btn__container{
+    display: flex;
+    align-items: flex-end;
+    max-height: 70px;
+}
+
+.btn__container button svg{
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 20px;
+}
+.btn__container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+
+@media screen and (min-width: 550px) and (max-width:899px) {
+    .find__vehicle__content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn__container{
+        grid-column: span 2;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .find__container{
+        padding: 0 4rem;
+    }
+    .find__vehicle__content{
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1rem;
+        position: relative;
+        top: -55px;
+        box-shadow: var(--box-shadow);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+
+    }
+    .select__location{
+        grid-column: span 2;
+    }
+
+    .select__date label,.select__location label {
+        font-size: var(--fs-200);
+    }
+}

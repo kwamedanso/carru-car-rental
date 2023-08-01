@@ -1,0 +1,39 @@
+.hero__section{
+    background-image: radial-gradient(#bdbdbd 1px, transparent 1px), radial-gradient(#bdbdbd 1px, transparent 1px);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.hero__content{
+    padding: 0 10px 2rem 10px;
+}
+
+.hero__content__buttons a{
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .hero__bg{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero__content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 0 0 4rem;
+    }
+
+     .fs-400-edit{
+        margin: 2rem 0;
+        max-width: 30rem;
+    }
+
+    .container{
+        /* padding: 0 0 0 4rem; */
+    }
+
+}

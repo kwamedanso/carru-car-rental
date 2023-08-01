@@ -1,0 +1,11 @@
+.collection-grid{
+    display: grid;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    .collection-grid{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
