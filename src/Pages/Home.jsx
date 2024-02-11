@@ -1,37 +1,31 @@
-import React, { useState } from 'react';
-import HeroSection from '../Components/HeroSection';
-import FindVehicle from '../Components/FindVehicle';
-import PlanTrip from '../Components/PlanTrip';
-import OurCollection from '../layout/OurCollection';
-import RentByBrand from '../Components/RentByBrand';
-import HowItWorks from '../Components/HowItWorks';
-import RentByBody from '../Components/RentByBody';
-import Services from '../Components/Services';
-import Testimonial from '../Components/Testimonial';
-import FilterContext from '../Components/filterContext'
-import { cars } from '../Data/cars';
-
+import React from 'react';
+import HeroSection from 'Components/home/HeroSection';
+import FindVehicle from "Components/home/FindVehicle"
+import PlanTrip from 'Components/home/PlanTrip';
+import OurCollection from 'Components/home/OurCollection';
+import RentByBrand from 'Components/home/RentByBrand';
+import RentByBodyType from 'Components/home/RentByBodyType';
+import HowItWorks from 'Components/home/HowItWorks';
+import Services from 'Components/home/Services';
+import Testimonial from 'Components/home/Testimonial';
+import ScrollToTop from 'Components/shared/ScrollToTop';
 
 
 export default function Home() {
-    const [allCars] = useState(cars);
-    const [filteredCars, setFilteredCars] = useState(cars);
-    const [activeButton, setactiveButton] = useState('All');
-
-    const value = { state: { allCars, filteredCars, activeButton }, actions: { setFilteredCars, setactiveButton } };
     return (
         <>
-            <FilterContext.Provider value={value}>
+            <ScrollToTop />
+            <div className="home-page">
                 <HeroSection />
                 <FindVehicle />
                 <PlanTrip />
                 <OurCollection />
                 <RentByBrand />
-                <RentByBody />
+                <RentByBodyType />
                 <HowItWorks />
                 <Services />
                 <Testimonial />
-            </FilterContext.Provider>
+            </div>
         </>
     )
 }

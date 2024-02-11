@@ -1,5 +1,3 @@
-
-
 export const bodyType = [
     {
         title: 'SUV',

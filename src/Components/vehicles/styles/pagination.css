@@ -1,0 +1,35 @@
+.pagination{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: .1rem;
+}
+
+.pagination-button{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: white;
+    border: 1px solid black;
+    transition: 300ms;
+    color: black;
+}
+
+.pagination-button.active, .pagination-button:hover{
+    background-color: var(--black);
+    color: white;
+}
+
+.pagination-button.inactive{
+    border: none;
+    cursor: not-allowed;
+    background-color: rgb(201, 201, 201);
+    color: var(--white);
+}
+
+.pagination-button:nth-child(1){
+    border-radius: 15px 0 0 15px;
+}
+
+.pagination-button:last-child{
+    border-radius: 0 15px 15px 0;
+}

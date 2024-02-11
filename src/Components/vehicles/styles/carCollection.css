@@ -1,0 +1,22 @@
+.car-collection{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    gap: .5rem;
+}
+
+.car-collection.inactive{
+    overflow: hidden;
+    position: fixed;
+}
+
+.collection-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: .7rem;
+}
+
+.no-cars{
+    text-align: center;
+    margin-block: 50px;
+}

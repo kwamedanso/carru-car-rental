@@ -1,9 +1,12 @@
 import React from 'react'
 
 export default function About() {
+
     return (
         <>
-            <div>About</div>
+            <div className='section-margin'>
+                <h1>About</h1>
+            </div>
         </>
     )
 }

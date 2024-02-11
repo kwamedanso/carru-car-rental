@@ -1,0 +1,43 @@
+.rent-by-wrapper{
+    display: grid;
+    gap: 1rem;
+}
+
+.body__card-image{
+    width: 4rem;
+    height: 4rem;
+}
+
+.rent__by__card .rent__by_icon svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.rent__by__title a:hover{
+    background-color: var(--black);
+    color: var(--white);
+    transition: 0s;
+}
+
+.rent__by__grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    .rent__by__grid{
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .rent__by__card .rent__by_icon svg{
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 899px) {
+    .rent__by__grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

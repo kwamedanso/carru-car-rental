@@ -1,0 +1,96 @@
+.show-filters{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.number-of-cars{
+    display: none;
+}
+
+.sort-content{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: max-content;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(0);
+    transition: 300ms;
+    transform-origin:  top right;
+    z-index: 9;
+}
+
+.sort-content.active{
+    transform: scale(1);
+}
+
+.sort-by-radios{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    font-size: 1.2rem;
+}
+
+.sort-content ul li button svg{
+    color: rgb(2, 78, 139);
+}
+
+
+.filter-button, .sort-button, .reset-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+    gap: .3rem;
+    background-color: white;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    font-size: 1.15rem;
+    color: var(--black);
+    transition: 300ms;
+}
+
+.filter-button:hover, .sort-button:hover, .reset-button:hover{
+    background-color: var(--black);
+    color: white;
+}
+
+.sort-by-radios div{
+    padding-inline: 3px;
+    border-radius: 5px;
+    transition: 300ms;
+}
+
+.sort-by-radios div:hover{
+    background-color: rgb(233, 231, 231);
+}
+
+
+.clear-selection-btn{
+    background-color: white;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    padding: 2px;
+    font-size: .9rem;
+    transition: 300ms;
+}
+
+.clear-selection-btn:hover{
+    background-color: var(--black);
+    color:  white;
+}
+
+
+@media screen and (min-width: 700px) {
+    .number-of-cars{
+        display: block;
+    }
+
+    .filter-button-wrapper{
+        display: none;
+    }
+}

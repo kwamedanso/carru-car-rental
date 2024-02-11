@@ -1,0 +1,40 @@
+.plan__trip__grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.plan__trip__grid .list-item{
+    max-width: 310px;
+}
+
+
+.plan__trip__grid .list-item svg{
+    font-size: 5rem;
+    padding: 1rem;
+    border-radius: 15px;
+} 
+
+span[data-accent='1'] svg{
+    background-color: #E6E7EC;
+    color: #466287;
+}
+
+span[data-accent='2'] svg{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+span[data-accent='3'] svg{
+    background-color: #E6E7EC;
+    color: #466287;
+}
+
+
+
+@media screen and (min-width: 650px){
+    .plan__trip__grid{
+        flex-wrap: wrap;       
+    }
+}

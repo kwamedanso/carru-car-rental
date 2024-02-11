@@ -1,0 +1,48 @@
+.collection__tabs button.active{
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.collection-content .btn__container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.collection-content .btn__container a{
+    gap: 5px;
+    padding: 10px 30px;
+}
+
+.cars__grid-collection{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+@media screen and (max-width: 600px) {
+    .collection__tabs{
+        display: grid;
+        gap: .4rem;
+        grid-auto-flow: column;
+        place-items: center;
+        grid-auto-columns: 28%;
+        overflow-x: scroll;
+    }
+    .collection__tabs button{
+        width: 100%;
+    }
+
+    .collection__tabs::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .collection_content_tabs{
+        display: grid;
+        place-items: center;
+    }
+}

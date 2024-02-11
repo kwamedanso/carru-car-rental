@@ -1,0 +1,51 @@
+.filter-item-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 5px 0;
+    cursor: pointer;
+    padding-block: 10px;
+}
+
+.filter-item-header p{
+    font-size: 1.3rem;
+}
+
+.filter-item-header:hover, .filter-item-header.active{
+    background-color: rgb(240, 238, 238);
+}
+
+.cross-sign svg{
+    font-size: 1.1rem;
+}
+
+.filter-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.filter-item-body.active{
+    max-height: 12rem;
+    overflow-y: scroll;
+}
+
+.filter-item-body::-webkit-scrollbar{
+    display: none;
+}
+
+.filter-item-body label{
+    display: inline-block;
+    padding-block: 7px;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 650px) {
+    .filter-item-header p{
+        font-size: 1.15rem;
+    }
+    .filter-item-body label{
+        font-size: 1rem;
+    }
+}

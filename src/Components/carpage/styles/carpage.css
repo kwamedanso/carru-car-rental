@@ -1,0 +1,217 @@
+.carpage{
+    display: grid;
+    gap: 1rem;
+    position: relative;
+}
+
+
+.carpage__pricing-title{
+    background-color: rgb(172, 226, 172);
+    background-color: #ECF7EC;
+    color: rgb(0, 31, 0);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carpage__pricing-body{
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+
+.carpage__pricing-body > div{
+    padding: 10px;
+}
+
+.carpage__location-info{
+    background-color: #F4F6F8;
+    /* background-color: #e7e9eb; */
+    /* background-color: #f1efef; */
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.user-selction, .driver-info, .payment-info, .optional-extras{
+    border: 1px solid #C0CAD5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.user-selction img{
+    width: 290px;
+    /* height: 100%; */
+    object-fit: contain;
+}
+.clr-blue{
+    color: blue;
+}
+
+.clr-green{
+    color: green;
+}
+
+.selected__car-info{
+    flex-wrap: wrap;
+    gap: 1;
+}
+.selected__car{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.selected__car-lists li svg{
+    color: green;
+}
+
+.selected__car-info img{
+    flex-shrink: 0;
+}
+
+.selected__car-info ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+    background-color: #e7e9eb;
+    background-color: #F4F6F8;
+    border-radius: 10px;
+    margin-block: 1rem;
+}
+
+.selected__car-info ul li div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pick-up{
+    display: grid;
+    gap: 1rem;
+}
+
+.pickup-instructions{
+    /* margin-top: 1rem; */
+}
+
+.margin-top{
+    margin-top: 1rem;
+}
+
+.margin-top-50{
+    margin-top: .5rem;
+}
+
+
+/* Driver info */
+.driver-info input, .payment-info input{
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    margin-top: .5rem;
+}
+
+
+
+/* Optional Extras */
+.extras-item{
+    margin-top: .3rem;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.extras-item label{
+    width: 100%;
+}
+
+.extras-item:hover{
+    background-color: #F4F6F8;
+}
+
+
+/* Banner */
+.carpage-banner{
+    background-color: #F4F6F8;
+    padding: 10px;
+}
+
+.carpage-banner div{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: var(--fw-semi-bold);
+}
+.carpage-banner svg{
+    font-size: 1rem;
+    color: #4F6F8F;
+    flex-shrink: 0;
+}
+
+
+/* Buttons */
+.complete-booking-button{
+    width: 100%;
+    padding: 10px;
+    background-color: #00AA00;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 1rem;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+.complete-booking-button:hover{
+    background-color: green;
+    
+}
+
+
+.added-extras{
+    transform-origin: left;
+    animation: fadeIn 400ms linear alternate;
+}
+
+
+
+
+
+@keyframes fadeI {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@media screen and (min-width: 750px) {
+    .carpage{
+        grid-template-columns: 2.4fr 1fr;
+    }
+    .carpage__pricing{
+        position: sticky;
+        top: 65px;
+        z-index: 3;
+        max-height: 500px;
+    }
+    .selected__car-info{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .selected__car{
+        flex-direction: row;
+        gap: 1rem;
+        }
+    .pick-up{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .complete-booking-button{
+        width: 20%;
+        
+    }
+}
