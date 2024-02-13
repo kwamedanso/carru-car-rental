@@ -8,8 +8,8 @@ export default function RentByBodyType() {
     return (
         <>
             <section id='body-type'>
-                <div className="section-margin rent-by-wrapper">
-                    <RentBySctionTitle />
+                <div className="section-margin rent-by-wrapper padding-block-600">
+                    <RentBySctionTitle variant={"Body Type"} />
 
                     <div className="rent__by__grid">
                         {bodyType.map(item => <div key={item.title} className='body__card'>
