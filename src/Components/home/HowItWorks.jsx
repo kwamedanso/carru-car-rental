@@ -8,7 +8,7 @@ export default function HowItWorks() {
     return (
         <>
             <section className='how-it-works-wrapper'>
-                <div className="section-margin">
+                <div className="section-margin padding-block-600">
 
                     <SectionTitle header={'How it works'} description={'Renting a luxury car has never been easier. Our streamlined process makes it simple for you to book and confirm your vehicle of choice online'} />
 
