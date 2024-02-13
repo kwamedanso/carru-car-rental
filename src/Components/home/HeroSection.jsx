@@ -9,7 +9,7 @@ export default function HeroSection() {
 
     return (
         <>
-            <section id='home' className="hero__section">
+            <section id='home' className="hero__section padding-block-500">
                 <div className="container">
                     <div className="hero__content">
                         <div className="hero-content_text">
