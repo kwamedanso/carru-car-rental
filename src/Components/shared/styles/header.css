@@ -44,9 +44,8 @@ header .logo a{
     text-decoration: none;
     color: var(--white);
     padding: 8px 10px;
-    /* border-radius: var(--border-radius); */
     transition: 100ms;
-    font-size: 14px;
+    font-size: var(--fs-200);
     opacity: .7;
 }
 
