@@ -4,7 +4,7 @@ header{
     background-position: 0 0, 50px 50px;
     background-color: var(--black);
     color: var(--white);
-    height: 55px;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,7 +76,6 @@ header .logo a{
 @media screen and (max-width: 800px) {
     header{
         padding: 0 14px;
-        height: 60px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 
     }
