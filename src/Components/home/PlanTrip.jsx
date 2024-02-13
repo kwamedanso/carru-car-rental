@@ -6,7 +6,7 @@ import SectionTitle from 'Components/shared/SectionTitle';
 export default function PlanTrip() {
     return (
         <>
-            <section id='plan-trip'>
+            <section id='plan-trip' className='padding-block-600'>
                 <div className="section-margin ta-center">
 
                     <SectionTitle header={'Better Way to Find Your Perfect Cars'} description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, maiores ducimus rem consequatur repellat voluptates'} />
