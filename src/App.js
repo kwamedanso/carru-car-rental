@@ -30,7 +30,7 @@ export default function App() {
 
         <Suspense fallback=<div className='center-div'><Loader /></div>>
           <Routes>
-            {privateRoutes.map(route => <Route path={route.path} element={route.element} />)}
+            {privateRoutes.map(route => <Route key={route.path} path={route.path} element={route.element} />)}
           </Routes>
         </Suspense>
 
