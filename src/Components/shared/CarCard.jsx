@@ -21,7 +21,7 @@ export default function CarCard(props) {
                                 {props.model.length >= 20 ? props.model.substring(0, 20) + '...' : props.model}
                             </p>
                             <h2 className="fs-400">
-                                {props.cost}
+                                ${props.cost}
                                 <span className='fs-200 fs-op'>/day</span>
                             </h2>
                             <div className="info__columns">
@@ -32,7 +32,7 @@ export default function CarCard(props) {
                                     <ListItem icon=<LuFuel /> content={props.fuelType} />
                                 </ul>
                             </div>
-                            <Link className='button' to={`/carpage/${props.id}`}>Rent Now</Link>
+                            <Link className='button car-card-button' to={`/carpage/${props.id}`}>Rent Now</Link>
                         </div>
                     </div>
                 </div>
