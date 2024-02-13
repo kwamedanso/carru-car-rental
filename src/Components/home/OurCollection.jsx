@@ -18,7 +18,7 @@ export default function OurCollection() {
     return (
         <>
             <section id="collection">
-                <div className="collection-content section-margin">
+                <div className="collection-content section-margin padding-block-600">
                     <SectionTitle header={'Our Impressive Collection of Cars'} description={'Ranging from elegant sedans to powerful sports cars, all carefully selected to provide our customers with the ultimate driving experience'} />
 
                     <div className="collection_content_tabs padding-block-300">
