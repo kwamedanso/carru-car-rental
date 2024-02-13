@@ -1,17 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom';
-import Home from 'Pages/Home';
-import Contact from 'Pages/Contact';
-import Testimonials from 'Pages/Testimonials';
-import About from './Pages/About';
 import Header from 'Components/shared/Header';
 import Footer from 'Components/shared/Footer';
-import Vehicles from './Pages/Vehicles';
 import FilterContext from "filterContext"
 import { cars } from 'Data/cars';
-import CarPage from "Pages/CarPage";
+import privateRoutes from 'routes';
 import BackToTopButton from "Components/shared/BackToTopButton";
 import "./index.css"
+import Loader from 'Components/shared/Loader';
 
 
 export default function App() {
@@ -31,15 +27,13 @@ export default function App() {
       <FilterContext.Provider value={value}>
         <Header />
         <BackToTopButton />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/vehicles' element={<Vehicles />} />
-          <Route path='/testimonials' element={<Testimonials />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/carpage/:id' element={<CarPage />} />
-        </Routes>
+
+        <Suspense fallback=<div className='center-div'><Loader /></div>>
+          <Routes>
+            {privateRoutes.map(route => <Route path={route.path} element={route.element} />)}
+          </Routes>
+        </Suspense>
+
         <Footer />
       </FilterContext.Provider>
     </>
