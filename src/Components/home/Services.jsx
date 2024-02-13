@@ -7,7 +7,7 @@ export default function Services() {
     return (
         <>
             <section id="services">
-                <div className="services-container section-margin ta-center">
+                <div className="services-container section-margin ta-center padding-block-600">
                     <SectionTitle header={'Our Services & Benefits'} description={'To make renting and hassle-free, we provide a variety of services and advantages. We have you covered with a variety of vehicles and flexible rental terms'} />
 
                     <div className="service__list__grid">
