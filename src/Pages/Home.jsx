@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroSection from 'Components/home/HeroSection';
-import FindVehicle from "Components/home/FindVehicle"
 import PlanTrip from 'Components/home/PlanTrip';
 import OurCollection from 'Components/home/OurCollection';
 import RentByBrand from 'Components/home/RentByBrand';
@@ -17,7 +16,6 @@ export default function Home() {
             <ScrollToTop />
             <div className="home-page">
                 <HeroSection />
-                <FindVehicle />
                 <PlanTrip />
                 <OurCollection />
                 <RentByBrand />
