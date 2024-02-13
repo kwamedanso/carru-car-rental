@@ -25,10 +25,6 @@ export default function Header() {
                         {navItems.map(item => {
                             return <li key={item.id} onClick={handleClick}><NavLink to={item.path} >{item.title}</NavLink></li>
                         })}
-                        <>
-                            <button onClick={handleClick} className='register'>Register</button>
-                            {/* <button className='login'>Log-in</button> */}
-                        </>
                     </ul>
                 </nav>
             </header >
