@@ -8,7 +8,6 @@ import FilterContext from "filterContext"
 
 export default function ShowFilters({ setOpenFilter }) {
     const [sortActive, setSortActive] = useState(false)
-    const [selectedRadio, setSelectedRadio] = useState('')
 
     const radioButtons = useRef([]);
 
@@ -20,7 +19,6 @@ export default function ShowFilters({ setOpenFilter }) {
 
     function sortPrice(e) {
         let value = e.target.value
-        setSelectedRadio(value)
         let sortedPrice = filteredCars.sort((a, b) => {
             if (value === 'low-to-high') {
                 return a.cost - b.cost
@@ -36,7 +34,6 @@ export default function ShowFilters({ setOpenFilter }) {
     function clearAllRadios() {
         for (let i = 0; i < radioButtons.current.length; i++) {
             radioButtons.current[i].checked = false;
-            setSelectedRadio('')
             let sortedPrices = filteredCars.sort((a, b) => {
                 return a.id - b.id;
             })
