@@ -6,7 +6,6 @@ import Transmission from 'Components/vehicles/sidebar/Transmission'
 import BodyType from 'Components/vehicles/sidebar/BodyType'
 import Category from 'Components/vehicles/sidebar/Category'
 import FilterContext from "filterContext"
-import Price from 'Components/vehicles/sidebar/Price'
 import "Components/vehicles/sidebar/styles/sidebar.css"
 
 
@@ -29,7 +28,6 @@ export default function Sidebar({ openFilter, setOpenFilter }) {
             </div>
 
             <div className="sidebar-body">
-                <Price />
                 <Brands />
                 <Persons />
                 <Transmission />
