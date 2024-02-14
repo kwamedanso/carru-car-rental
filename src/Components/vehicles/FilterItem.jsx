@@ -39,7 +39,7 @@ export default function FilterItem({ title, filterKey, label, contents }) {
             setFilteredCars([...pushContainer])
         }
         scrollToTop()
-    }, [selected])
+    }, [selected, allCars, filterKey, setCurrentPage, setFilteredCars])
 
 
     function handleFilter(event, filterLabel) {

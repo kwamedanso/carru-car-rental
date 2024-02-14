@@ -14,7 +14,7 @@ export default function SearchBox(props) {
         let newSearch = allCars.filter(car => car.brand.toLocaleLowerCase().includes(search.toLocaleLowerCase()) || car.model.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
 
         setFilteredCars([...newSearch])
-    }, [search])
+    }, [search, allCars, setFilteredCars])
 
 
     function handleSearchInput(e) {
