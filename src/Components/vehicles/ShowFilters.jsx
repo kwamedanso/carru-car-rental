@@ -45,7 +45,7 @@ export default function ShowFilters({ setOpenFilter }) {
     }
 
     return (
-        <div className='show-filters'>
+        <div className='show-filters padding-block-100'>
             <div className="filter-button-wrapper">
                 <button className='filter-button' onClick={() => setOpenFilter(true)}><span>Filter</span><FiFilter /></button>
             </div>
