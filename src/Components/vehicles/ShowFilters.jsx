@@ -41,6 +41,8 @@ export default function ShowFilters({ setOpenFilter }) {
         }
     }
 
+
+
     return (
         <div className='show-filters padding-block-100'>
             <div className="filter-button-wrapper">
