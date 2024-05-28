@@ -28,7 +28,7 @@ export default function ShowFilters({ setOpenFilter }) {
                 return b.cost - a.cost
             }
         })
-        setFilteredCars((prev => [...sortedPrice]))
+        setFilteredCars([...sortedPrice])
     }
 
 
